@@ -4,7 +4,218 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form</title>
+    <title>freeCodeCamp Survey Form Ceritification Project</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">
+          <span id="restaurant">ilonaGold's Restaurant</span
+          ><span id="survey"
+            ><br />
+            Survey Form</span
+          >
+        </h1>
+        <p id="description">
+          Thank you for taking the time to help us improve our service!
+        </p>
+      </div>
+      <form action="#" id="survey-form">
+        <fieldset>
+          <label id="name-label"
+            >Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-controls"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label id="email-label"
+            >Email:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-controls"
+              placeholder="Enter your email"
+              required
+          /></label>
+          <label id="number-label"
+            >Age (optional):
+            <input
+              type="number"
+              name="number"
+              id="number"
+              class="form-controls"
+              min="13"
+              max="120"
+              placeholder="Age"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>How often do you dine at our restaurant?</p>
+          <section class="flex">
+            <label>
+              <input
+                name="customer"
+                value="first"
+                type="radio"
+                class="input-radio"
+                checked
+              />First-timer</label
+            >
+            <label>
+              <input
+                name="customer"
+                value="infrequent"
+                type="radio"
+                class="input-radio"
+              />Infrequent diner</label
+            >
+            <label
+              ><input
+                name="customer"
+                value="loyal"
+                type="radio"
+                class="input-radio"
+              />Loyal Customer</label
+            >
+          </section>
+        </fieldset>
+        <fieldset>
+          <p>How would you rate our restaurant?</p>
+          <section class="flex">
+            <label>
+              <input
+                name="rating"
+                value="five-stars"
+                type="radio"
+                class="stars-radio"
+                checked
+              />⭐⭐⭐⭐⭐</label
+            >
+            <label>
+              <input
+                name="rating"
+                value="four-stars"
+                type="radio"
+                class="stars-radio"
+              />
+              ⭐⭐⭐⭐</label
+            >
+            <label>
+              <input
+                name="rating"
+                value="three-stars"
+                type="radio"
+                class="stars-radio"
+              />⭐⭐⭐</label
+            >
+            <label>
+              <input
+                name="rating"
+                value="two-stars"
+                type="radio"
+                class="stars-radio"
+              />
+              ⭐⭐</label
+            >
+            <label>
+              <input
+                name="rating"
+                value="one-star"
+                type="radio"
+                class="stars-radio"
+              />
+              ⭐</label
+            >
+          </section>
+        </fieldset>
+        <fieldset>
+          <p>Would you recommend us to your family and friends?</p>
+          <section class="flex">
+            <label>
+              <input
+                name="recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+            <label
+              ><input
+                name="recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label
+            >
+            <label
+              ><input
+                name="recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Definitely not</label
+            >
+          </section>
+        </fieldset>
+        <fieldset>
+          <p>
+            What is your favorite pizza of the house?
+            <small>(You can choose more than one)</small>
+          </p>
+          <section class="flex">
+            <input type="checkbox" id="dish1" name="dish1" value="Html" />
+            <label for="dish1"> Pizza for HTML Lovers </label>
+            <input type="checkbox" id="dish2" name="dish2" value="Css" />
+            <label for="dish2"> Pizza for CSS Lovers</label>
+            <input type="checkbox" id="dish3" name="dish3" value="Js" />
+            <label for="dish3"> Pizza for JS Lovers</label>
+            <input type="checkbox" id="dish4" name="dish4" value="Frontend" />
+            <label for="dish4"> Pizza for Frontend Developers </label>
+            <input type="checkbox" id="dish5" name="dish5" value="Backend" />
+            <label for="dish5"> Pizza for Backend Developers</label>
+            <input type="checkbox" id="dish6" name="dish6" value="Full" />
+            <label for="dish6"> Pizza for Fullstack Developers</label>
+          </section>
+        </fieldset>
+        <fieldset>
+          <label id="dropdown"
+            >How did you hear about us?
+            <select name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Local newspaper ad</option>
+              <option value="2">Radio ad</option>
+              <option value="3">Our Facebook page</option>
+              <option value="4">From your family/friend</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label
+            >How could we serve you better in the future?
+            <textarea name="suggestions" rows="5" cols="75"> </textarea>
+          </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
