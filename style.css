@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --beige-alfa: rgb(255, 226, 188, 0.9);
   --maroon: #800000;
@@ -22,13 +28,13 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 65rem;
+  font-size: 1.7rem;
   background: var(--beige-alfa);
   color: var(--maroon);
-  padding: 1em 3em;
+  padding: 3.5rem 5rem;
+  margin: 4rem auto;
   border-radius: 20px;
-  font-size: 1.7rem;
-  margin: 2em auto;
   box-shadow: 0px 0px 10px #8585085e;
 }
 
@@ -54,40 +60,8 @@ h1 {
 
 #description {
   font-size: 1.8rem;
-  margin-bottom: 1em;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-fieldset {
-  border: none;
-}
-
-label {
-  display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"] {
-  width: 100%;
-  height: 2.25em;
-  padding-left: 0.5em;
-  margin: 0.5em 0;
-}
-
-#dropdown {
-  margin: 1em 0;
-}
-
-select {
-  width: 102%;
-  height: 2.5em;
-  margin: 0.5em 0;
-  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 2.5rem 0;
 }
 
 .flex {
@@ -96,24 +70,60 @@ select {
   font-size: 1.4rem;
 }
 
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  height: 3.5rem;
+  padding-left: 0.5rem;
+}
+
+label input {
+  margin-right: 0.25rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+#dropdown {
+  margin-bottom: 1rem;
+}
+
+select {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
 textarea {
-  margin-top: 1em;
-  padding: 1em 0.5em;
   width: 100%;
   max-width: 100%;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
 }
 
 #submit {
   display: block;
-  padding: 1em 2em;
+  padding: 1.5rem 3rem;
   font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
   background-color: var(--dark-green);
   color: var(--white);
-  margin: 2em auto;
+  margin: 1.5rem auto;
   border: none;
   border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -123,3 +133,5 @@ textarea {
   transform: scale(1.05);
   transition: all 0.3s;
 }
+
+url("https://ilonagold.github.io/hosted-assets/restaurant.jpg") 
