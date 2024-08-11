@@ -85,6 +85,11 @@ input[type="number"] {
   padding-left: 0.5rem;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #006400;
+}
+
 label input {
   margin: 0.15rem;
 }
